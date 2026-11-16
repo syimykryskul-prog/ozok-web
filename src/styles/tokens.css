@@ -1,0 +1,134 @@
+:root {
+  color-scheme: light;
+  /* бренд (константы) */
+  --navy: #091c35;
+  --turquoise: #00beba;
+  --on-navy: #ffffff;
+  --on-primary: #091c35;
+  --primary-hover: #00d2ce;
+
+  /* семантические токены (светлая тема) */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --mist: #f3f7fb;
+  --text: #091c35;
+  --text-2: #4b5a70;
+  --on-dark: #d5dde8;
+  --border: #dce3ec;
+  --input-border: #b9c4d3;
+  --turquoise-dark: #007f7c;
+  --link: #007f7c;
+  --hero-bg: #091c35;
+  --sidebar-bg: #091c35;
+  --sidebar-muted: #9fb0c6;
+  --sidebar-line: rgba(255, 255, 255, 0.1);
+  --sidebar-hover: rgba(255, 255, 255, 0.07);
+  --nav-active-bg: rgba(0, 190, 186, 0.14);
+  --inv-bg: #091c35;
+  --inv-fg: #ffffff;
+  --inv-hover: #12305a;
+  --toast-bg: #091c35;
+  --toast-fg: #ffffff;
+  --scrim: rgba(9, 28, 53, 0.55);
+  --shadow-modal: 0 24px 64px rgba(9, 28, 53, 0.35);
+  --shadow-pop: 0 12px 32px rgba(9, 28, 53, 0.15);
+  --shadow-toast: 0 8px 24px rgba(9, 28, 53, 0.3);
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-line: rgba(255, 255, 255, 0.4);
+  --skeleton-a: #e9eef5;
+  --skeleton-b: #f6f9fc;
+  --plate: #ffffff; /* светлая плашка под логотип */
+  --accent-badge: #b8431c;
+  --on-badge: #ffffff;
+  --select-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23091C35' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+  --success: #1e9e6a;
+  --warning: #c98a0b;
+  --error: #d64545;
+  --info: #2f6fde;
+  --neutral: #4b5a70;
+  --success-bg: #e6f6ef;
+  --warning-bg: #fbf1dc;
+  --error-bg: #fbe9e9;
+  --info-bg: #e7effc;
+  --neutral-bg: #eaeff5;
+
+  /* графики */
+  --chart-grid: #dce3ec;
+  --chart-axis: #4b5a70;
+  --chart-1: #00beba;
+  --chart-2: #091c35;
+  --chart-3: #2f6fde;
+  --chart-negative: #d64545;
+  --chart-tooltip-bg: #ffffff;
+  --chart-tooltip-border: #dce3ec;
+
+  --font: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+  --sp-1: 8px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 32px;
+  --sp-6: 48px;
+  --sp-8: 64px;
+
+  --radius-input: 12px;
+  --radius-card: 16px;
+  --radius-hero: 24px;
+  --radius-pill: 999px;
+
+  --sidebar-w: 280px;
+  --focus: 3px solid var(--turquoise);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #07121f;
+  --surface: #0e1e33;
+  --mist: #13263f;
+  --text: #e6edf5;
+  --text-2: #9aa9bc;
+  --on-dark: #c3cfde;
+  --border: #22344d;
+  --input-border: #3a506e;
+  --turquoise-dark: #2fd3cf;
+  --link: #2fd3cf;
+  --hero-bg: #13263f;
+  --sidebar-bg: #050d17;
+  --sidebar-muted: #8a9bb2;
+  --inv-bg: #e6edf5;
+  --inv-fg: #07121f;
+  --inv-hover: #ffffff;
+  --toast-bg: #1b3250;
+  --toast-fg: #e6edf5;
+  --scrim: rgba(2, 8, 15, 0.7);
+  --shadow-modal: 0 24px 64px rgba(0, 0, 0, 0.6);
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.5);
+  --shadow-toast: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --skeleton-a: #13263f;
+  --skeleton-b: #1b3250;
+  --accent-badge: #e0663a;
+  --on-badge: #07121f;
+  --select-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23E6EDF5' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+  --success: #3cc489;
+  --warning: #e5b04a;
+  --error: #f07171;
+  --info: #6ea0f5;
+  --neutral: #9aa9bc;
+  --success-bg: #11352b;
+  --warning-bg: #3a2f14;
+  --error-bg: #3d1c20;
+  --info-bg: #152a4c;
+  --neutral-bg: #1b2d45;
+
+  --chart-grid: #22344d;
+  --chart-axis: #9aa9bc;
+  --chart-1: #2fd3cf;
+  --chart-2: #6ea0f5;
+  --chart-3: #e5b04a;
+  --chart-negative: #f07171;
+  --chart-tooltip-bg: #13263f;
+  --chart-tooltip-border: #22344d;
+}
